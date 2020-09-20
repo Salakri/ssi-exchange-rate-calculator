@@ -104,15 +104,14 @@ function Exchange() {
           <select
             className="form-control col-sm-2"
             id="input-currency"
-            value={
-              isLoaded ? store.getState().exchangeReducer.inputCurrency : "USD"
-            }
+            value={isLoaded ? currency.inputCurrency : "USD"}
             onChange={updateInputCurrency}
           >
             {displayOptions(isLoaded, ratio)}
           </select>
-          <div className="form-control col-sm-4">
+          <div className="form-control col-sm-3">
             <input
+              className="col"
               type="number"
               value={isLoaded ? currency.inputCount : 1}
               id="input-currency-count"
@@ -148,8 +147,9 @@ function Exchange() {
           >
             {displayOptions(isLoaded, ratio)}
           </select>
-          <div className="form-control col-sm-4 numdisplay">
+          <div className="form-control col-sm-3 numdisplay">
             <input
+              className="col"
               type="number"
               value={isLoaded ? currency.outputCount : 1}
               onChange={updateOutputCount}
