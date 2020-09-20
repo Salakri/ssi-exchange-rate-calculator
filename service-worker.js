@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ssi-exchange-rate-calculator/precache-manifest.74cdd895fddc078fb1f4abf1d96a3635.js"
+  "/ssi-exchange-rate-calculator/precache-manifest.44af09db8b1c2043ab88f9e9ef7dd6f4.js"
 );
 
 self.addEventListener('message', (event) => {
